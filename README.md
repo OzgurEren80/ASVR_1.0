@@ -1,5 +1,5 @@
 # ASVR_1.0
-The initial prototype for a social VR project implemented in Unity and Engage SDK. The project should be uploaded to a valid Engage XR account via the location manager in Unity. After the upload is complete it can be run as a session in Engage XR. The projecct fosters role-playing or acting in a story. Below is a brief description of the implemented scenario. (The second scenario is not implemented yet. It is a backup scenario to be implemented in the future if needed.)
+This is the initial prototype for a social VR project implemented in Unity and Engage SDK. The scene can be found under scene_bundles. The name of the scene is "ZU Farms". The project should be uploaded to a valid Engage XR account via the location manager in Unity. After the upload is complete it can be run as a session in Engage XR. The projecct fosters role-playing or acting in a story. Below is a brief description of the implemented scenario. (The second scenario is not implemented yet. It is a backup scenario to be implemented in the future if needed.)
 
 <H1>The Improvisation Scenario for Immersive Learning in Social VR</H1>
 
