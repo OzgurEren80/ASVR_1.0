@@ -5,8 +5,6 @@ This is the initial prototype for a social VR project implemented in Unity and E
 
 <H1>The Improvisation Scenario for Immersive Learning in Social VR</H1>
 
-<div align="right">Özgür Eren</div>     
-
 <strong>Introduction</strong>
 
 This document has been created for the project “Acting in Social VR for Immersive Learning”. The aim of the project is to create a social VR application in which students can educate themselves about climate crisis and the rising values of the right-extremism. In this document, the characters and the dramatic situation options for improvisation in social VR are given. Currently, the first option is being implemented. The second one has been written as an alternative for the first. After the initial test, the second option can also be implemented when needed. The idea is to generate one scene, in which the two main characters encounter a problematic situation. The two characters in this story, named Q and S, are inspired by the two characters from the classical novel Don Quijote. They are adapted to today’s conditions, and they are placed in a not-far-distant future, in an unknown land.
