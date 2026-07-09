@@ -67,6 +67,18 @@ namespace Engage.IFX.NetworkStates
         public void SetInt9(int value) { }
         public void SetInt10(int value) { }
 
+        public void AddToInt0(int value) { }
+        public void AddToInt1(int value) { }
+        public void AddToInt2(int value) { }
+        public void AddToInt3(int value) { }
+        public void AddToInt4(int value) { }
+        public void AddToInt5(int value) { }
+        public void AddToInt6(int value) { }
+        public void AddToInt7(int value) { }
+        public void AddToInt8(int value) { }
+        public void AddToInt9(int value) { }
+        public void AddToInt10(int value) { }
+
         public void SetFloat0(float value) { }
         public void SetFloat1(float value) { }
         public void SetFloat2(float value) { }
@@ -78,5 +90,17 @@ namespace Engage.IFX.NetworkStates
         public void SetFloat8(float value) { }
         public void SetFloat9(float value) { }
         public void SetFloat10(float value) { }
+
+        public void AddToFloat0(float value) { }
+        public void AddToFloat1(float value) { }
+        public void AddToFloat2(float value) { }
+        public void AddToFloat3(float value) { }
+        public void AddToFloat4(float value) { }
+        public void AddToFloat5(float value) { }
+        public void AddToFloat6(float value) { }
+        public void AddToFloat7(float value) { }
+        public void AddToFloat8(float value) { }
+        public void AddToFloat9(float value) { }
+        public void AddToFloat10(float value) { }
     }
 }

@@ -123,7 +123,7 @@ MonoBehaviour:
       _dynamic: 0
   referenceName: Ozgur_GO
   objectOut: {fileID: 0}
---- !u!114 &-2604803409196756941
+--- !u!114 &-5141084296690375036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,27 +132,134 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cf84d3daf658c54eb4b097d34b3b2c3, type: 3}
-  m_Name: Start
+  m_Script: {fileID: 11500000, guid: c25bae32844253e40b4664aac98b9478, type: 3}
+  m_Name: Fixed Update
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -504, y: -8}
+  position: {x: -792, y: -40}
   ports:
     keys:
     - exit
     values:
     - _fieldName: exit
-      _node: {fileID: -2604803409196756941}
+      _node: {fileID: -5141084296690375036}
       _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
       - fieldName: enter
-        node: {fileID: 2930224200987064067}
+        node: {fileID: -1693140474157398655}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
       _typeConstraint: 2
       _dynamic: 0
+--- !u!114 &-1693140474157398655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 982c1d6701650af4f94643cfa7a0f854, type: 3}
+  m_Name: Simple Timer
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -456, y: -72}
+  ports:
+    keys:
+    - loop
+    - duration
+    - started
+    - tick
+    - completed
+    - elapsed
+    - remaining
+    - enter
+    values:
+    - _fieldName: loop
+      _node: {fileID: -1693140474157398655}
+      _typeQualifiedName: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: duration
+      _node: {fileID: -1693140474157398655}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: started
+      _node: {fileID: -1693140474157398655}
+      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: tick
+      _node: {fileID: -1693140474157398655}
+      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: completed
+      _node: {fileID: -1693140474157398655}
+      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 4257562623892100067}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: elapsed
+      _node: {fileID: -1693140474157398655}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: remaining
+      _node: {fileID: -1693140474157398655}
+      _typeQualifiedName: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: -1693140474157398655}
+      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: exit
+        node: {fileID: -5141084296690375036}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+  loop: 0
+  duration: 0.2
+  elapsed: 0
+  remaining: 0
 --- !u!114 &-582267541616845510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +273,7 @@ MonoBehaviour:
   m_Name: Game Object Set Active
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 312, y: 216}
+  position: {x: 616, y: 200}
   ports:
     keys:
     - gameObjectIn
@@ -235,7 +342,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: 3189507798129265562}
-  - {fileID: -2604803409196756941}
   - {fileID: 3541737314559393459}
   - {fileID: 2930224200987064067}
   - {fileID: -7070033812998837956}
@@ -246,6 +352,9 @@ MonoBehaviour:
   - {fileID: 2855250435384116251}
   - {fileID: -582267541616845510}
   - {fileID: 5087360550600247713}
+  - {fileID: -1693140474157398655}
+  - {fileID: -5141084296690375036}
+  - {fileID: 4257562623892100067}
 --- !u!114 &2855250435384116251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,7 +368,7 @@ MonoBehaviour:
   m_Name: Game Object Set Active
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 600, y: 24}
+  position: {x: 904, y: 8}
   ports:
     keys:
     - gameObjectIn
@@ -324,7 +433,7 @@ MonoBehaviour:
   m_Name: If
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: -47.333374, y: -3.5}
+  position: {x: 264, y: -8}
   ports:
     keys:
     - ifTrue
@@ -373,8 +482,8 @@ MonoBehaviour:
       _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
       connections:
-      - fieldName: exit
-        node: {fileID: -2604803409196756941}
+      - fieldName: once
+        node: {fileID: 4257562623892100067}
         reroutePoints: []
       _direction: 0
       _connectionType: 0
@@ -457,7 +566,7 @@ MonoBehaviour:
   m_Name: Game Object Set Active
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 312, y: 24}
+  position: {x: 616, y: 8}
   ports:
     keys:
     - gameObjectIn
@@ -587,6 +696,69 @@ MonoBehaviour:
   playerHeight: 0
   isSessionHost: 0
   id: 0
+--- !u!114 &4257562623892100067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca3f51c6e5fe25446a8d738fa3adac22, type: 3}
+  m_Name: Once
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: -40, y: -24}
+  ports:
+    keys:
+    - reset
+    - once
+    - after
+    - enter
+    values:
+    - _fieldName: reset
+      _node: {fileID: 4257562623892100067}
+      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
+    - _fieldName: once
+      _node: {fileID: 4257562623892100067}
+      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: enter
+        node: {fileID: 2930224200987064067}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: after
+      _node: {fileID: 4257562623892100067}
+      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: enter
+      _node: {fileID: 4257562623892100067}
+      _typeQualifiedName: Engage.AFX.v1.AFXFlow, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: completed
+        node: {fileID: -1693140474157398655}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 0
+      _typeConstraint: 2
+      _dynamic: 0
 --- !u!114 &5087360550600247713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,7 +772,7 @@ MonoBehaviour:
   m_Name: Game Object Set Active
   m_EditorClassIdentifier: 
   graph: {fileID: 11400000}
-  position: {x: 600, y: 216}
+  position: {x: 904, y: 200}
   ports:
     keys:
     - gameObjectIn

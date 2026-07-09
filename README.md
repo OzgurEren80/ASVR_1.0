@@ -1,9 +1,11 @@
 # ASVR_1.0
-This is the initial prototype for a social VR project implemented in Unity and Engage SDK. The scene can be found under scene_bundles. The name of the scene is "ZU Farms". The project should be uploaded to a valid Engage XR account via the location manager in Unity. After the upload is complete it can be run as a session in Engage XR. The projecct fosters role-playing or acting in a story. Below is a brief description of the implemented scenario. (The second scenario is not implemented yet. It is a backup scenario to be implemented in the future if needed.)
+This is the initial prototype for a social VR project implemented in Unity and Engage SDK. The scene can be found under scene_bundles. The name of the scene is "ZU Farms". The project should be uploaded to a valid Engage XR account via the location manager in Unity. After the upload is complete it can be run as a session in Engage XR. The project fosters role-playing or acting in a story. Below is a brief description of the implemented scenario. (The second scenario is not implemented yet. It is a backup scenario to be implemented in the future if needed.)
 
-<!--<div align="center"><a href="https://zenodo.org/records/20640505"><img width="200" alt="farms" src="images/zenodo.20640505.svg" /></a></div>-->
+
 
 <H1>The Improvisation Scenario for Immersive Learning in Social VR</H1>
+
+<div align="right">Özgür Eren</div>     
 
 <strong>Introduction</strong>
 

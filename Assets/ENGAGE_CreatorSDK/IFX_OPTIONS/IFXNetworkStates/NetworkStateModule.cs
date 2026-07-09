@@ -38,5 +38,9 @@ namespace Engage.IFX.NetworkStates
         public void ReleaseFixedOwnership()
         {
         }
+
+        public void Start()
+        {
+        }
     }
 }
